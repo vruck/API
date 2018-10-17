@@ -1,0 +1,11 @@
+C:\Users\anapaula\source\repos\WEBAPI\Repositorio\bin\Debug\Repositorio.dll.config
+C:\Users\anapaula\source\repos\WEBAPI\Repositorio\bin\Debug\Repositorio.dll
+C:\Users\anapaula\source\repos\WEBAPI\Repositorio\bin\Debug\Repositorio.pdb
+C:\Users\anapaula\source\repos\WEBAPI\Repositorio\bin\Debug\EntityFramework.dll
+C:\Users\anapaula\source\repos\WEBAPI\Repositorio\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\anapaula\source\repos\WEBAPI\Repositorio\bin\Debug\EntityFramework.xml
+C:\Users\anapaula\source\repos\WEBAPI\Repositorio\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\anapaula\source\repos\WEBAPI\Repositorio\obj\Debug\Repositorio.csprojResolveAssemblyReference.cache
+C:\Users\anapaula\source\repos\WEBAPI\Repositorio\obj\Debug\Repositorio.csproj.CoreCompileInputs.cache
+C:\Users\anapaula\source\repos\WEBAPI\Repositorio\obj\Debug\Repositorio.dll
+C:\Users\anapaula\source\repos\WEBAPI\Repositorio\obj\Debug\Repositorio.pdb

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AppBurguerPigModelStoreContainer" CdmEntityContainer="AppBurguerPigEntities">
+    <EntitySetMapping Name="pedidos">
+      <EntityTypeMapping TypeName="AppBurguerPigModel.pedidos">
+        <MappingFragment StoreEntitySet="pedidos">
+          <ScalarProperty Name="codigo" ColumnName="codigo" />
+          <ScalarProperty Name="data" ColumnName="data" />
+          <ScalarProperty Name="codigoProduto" ColumnName="codigoProduto" />
+          <ScalarProperty Name="qtde" ColumnName="qtde" />
+          <ScalarProperty Name="valortotal" ColumnName="valortotal" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="produtos">
+      <EntityTypeMapping TypeName="AppBurguerPigModel.produtos">
+        <MappingFragment StoreEntitySet="produtos">
+          <ScalarProperty Name="codigo" ColumnName="codigo" />
+          <ScalarProperty Name="descricao" ColumnName="descricao" />
+          <ScalarProperty Name="valor" ColumnName="valor" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

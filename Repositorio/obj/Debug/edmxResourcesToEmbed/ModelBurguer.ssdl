@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AppBurguerPigModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="pedidos">
+    <Key>
+      <PropertyRef Name="codigo" />
+    </Key>
+    <Property Name="codigo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="data" Type="datetime" />
+    <Property Name="codigoProduto" Type="int" />
+    <Property Name="qtde" Type="int" />
+    <Property Name="valortotal" Type="decimal" Precision="8" Scale="2" />
+  </EntityType>
+  <EntityType Name="produtos">
+    <Key>
+      <PropertyRef Name="codigo" />
+    </Key>
+    <Property Name="codigo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="descricao" Type="varchar" MaxLength="150" />
+    <Property Name="valor" Type="decimal" Precision="8" Scale="2" />
+  </EntityType>
+  <Association Name="FK_pedidos_produtos">
+    <End Role="produtos" Type="Self.produtos" Multiplicity="0..1" />
+    <End Role="pedidos" Type="Self.pedidos" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="produtos">
+        <PropertyRef Name="codigo" />
+      </Principal>
+      <Dependent Role="pedidos">
+        <PropertyRef Name="codigoProduto" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="AppBurguerPigModelStoreContainer">
+    <EntitySet Name="pedidos" EntityType="Self.pedidos" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="produtos" EntityType="Self.produtos" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_pedidos_produtos" Association="Self.FK_pedidos_produtos">
+      <End Role="produtos" EntitySet="produtos" />
+      <End Role="pedidos" EntitySet="pedidos" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
